@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Layers } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const GithubIcon = ({ size = 20 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
