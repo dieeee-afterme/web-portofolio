@@ -80,19 +80,42 @@ ul {
   background: url('https://grainy-gradients.vercel.app/noise.svg');
 }
 
-/* Global Layout */
+/* Responsive Utilities */
+.hidden { display: none !important; }
+
+@media (min-width: 768px) {
+  .md-flex { display: flex !important; }
+  .md-hidden { display: none !important; }
+}
+
+/* Sections */
+section {
+  padding: 80px 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 120px 0;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 20px;
 }
 
-section {
-  padding: 6rem 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+/* Typography Overrides for Mobile */
+@media (max-width: 767px) {
+  h1, .text-8xl { font-size: 3.5rem !important; line-height: 1 !important; }
+  h2, .text-6xl { font-size: 2.5rem !important; }
+  .text-xl { font-size: 1.125rem !important; }
 }
 
 /* Glitch Animation */
